@@ -42,7 +42,7 @@ function moveHandler(event) {
                 playerXSelections.push(Number(clickedCellElement.id))
                 if (checkForWin(winningCombinations, playerXSelections)) {
                     winnerDiv.innerHTML = "X wins!"
-                    turnDiv.innerHTML = "game over"
+                    turnDiv.innerHTML = "game over:"
                 }
             } else {
                 clickedCellElement.innerHTML = "O"
@@ -56,7 +56,7 @@ function moveHandler(event) {
             }
             if (checkForDraw()) {
                 winnerDiv.innerHTML = "draw"
-                turnDiv.innerHTML = "game over"
+                turnDiv.innerHTML = "game over:"
             }
         }
     }
